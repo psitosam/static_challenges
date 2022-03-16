@@ -1,16 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
     <title>5280 Landmarks</title>
-    <link rel="stylesheet" href="stylesheets/reset.css" title="text/css" />
-    <link rel="stylesheet" href="stylesheets/main.css" title="text/css" />
+
+    <style>
+      body{
+        margin:0;
+        background-color: gray;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+
+
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 1fr 1fr 50px;
+
+        gap: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .container div {
+        padding:10px;
+        border: 1px solid #000000;
+      }
+
+      .header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        background-color: FireBrick;
+        color: white;
+
+      }
+
+      .content-large {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-color: white;
+      }
+
+      .content-small-first {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: white;
+      }
+
+      .content-small-second {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        background-color: white;
+      }
+
+      .footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        color: white;
+        font-size: 12px;
+      }
+
+      p1 {
+        font-size: 0.875em;
+      }
+    </style>
   </head>
+
   <body>
+    <div class="container">
+        <div class="header">5280 Landmarks</div>
+        <div class="content-large"> <img src="./images/1.jpg" width="800" height="400"> <h3>Denver Art Museum</h3> <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p1> </div>
+        <div class="content-small-first"><h3>Larimer Square</h3><img src="./images/2.jpg" width="400" height="200"></div>
+        <div class="content-small-second"><h3>Molly Brown House</h3><img src="./images/3.jpg" width="400" height="200"></div>
+        <div class="footer">Alia utinam maiorum pro te, eum ex sonet putent discere. Mea cu possit forensibus comprehensam. Mel te primis commodo, nibh labore nostrum ei mel. Ex vix adolescens suscipiantur, malorum iuvaret usu id. At mea lobortis pertinacia, scripta sententiae et mei, sumo partem pro ex. Nam movet facete ex, eos rebum nulla qualisque ea, vis malis clita efficiantur ut. At vel lorem paulo soluta, ancillae quaestio no quo, id vim blandit voluptatum.</div>
+
+    </div>
 
   </body>
 </html>
-
-
-
-
